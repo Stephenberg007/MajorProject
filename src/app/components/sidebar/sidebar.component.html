@@ -1,0 +1,15 @@
+<!-- Menu Sidebar -->
+<aside class="menu-sidebar d-none d-lg-block">
+   
+    <div class="menu-sidebar-content js-scrollbar1">
+        <nav class="navbar-sidebar">
+            <ul class="list-unstyled navbar-list">
+                <li *ngFor="let category of categories">
+                    <a routerLink="category/{{category.categoryId}}" routerLinkActive="active-link">
+                    {{category.categoryName}}</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+<!-- END OF MENU SIDEBAR -->

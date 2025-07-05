@@ -1,0 +1,12 @@
+<div class="login-modal">
+    <div class="login-container">
+      <span class="close" (click)="closeForm()">&times;</span>
+      <h2>Login</h2>
+      <form (ngSubmit)="userLogin()">
+        <input type="text" [(ngModel)]="login.custEmail" name="email" placeholder="Email">
+        <input type="password" [(ngModel)]="login.pwd" name="password" placeholder="Password">
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+  
